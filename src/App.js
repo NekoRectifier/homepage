@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import {Card, CardActions, CardContent, IconButton, Typography} from "@mui/material";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TelegramIcon from "@mui/icons-material/Telegram";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card className={"Main"}>
+        <CardContent>
+          <div className={"NameDisplay"}>
+            <Typography variant={"h3"}>
+              NekoRectifier
+            </Typography>
+            <Typography variant={"body1"}>
+              a.k.a. NekoRect
+            </Typography>
+          </div>
+          
+          {/*  add a split line*/}
+        
+        </CardContent>
+        
+        <CardActions sx={{justifyContent: 'flex-end'}}>
+          <IconButton><GitHubIcon></GitHubIcon></IconButton>
+          <IconButton><TelegramIcon></TelegramIcon></IconButton>
+        </CardActions>
+      
+      
+      </Card>
     </div>
   );
 }
