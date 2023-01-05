@@ -56,7 +56,7 @@ function App() {
               {/*  add a split line*/}
               <hr></hr>
               <Typography>
-                A 21 yo. Undergraduate who is passionate about coding and open sourcing.
+                A {Get_Curr_Age()} yo. Undergraduate who is passionate about coding and open sourcing.
               </Typography>
           
             </CardContent>
@@ -72,13 +72,18 @@ function App() {
               <IconButton color={'inherit'} href={"https://t.me/NekoRectifier"}><TelegramIcon/></IconButton>
               <IconButton color={"inherit"} href={"https://twitter.com/NekoKjswg5Q"}><Twitter/></IconButton>
             </CardActions>
-        
+
           </Card>
         </Box>
       </Container>
-  
+
     </ThemeProvider>
   );
+}
+
+function Get_Curr_Age() {
+  const date = new Date();
+  return (date.getFullYear() - 2002);
 }
 
 export default App;
