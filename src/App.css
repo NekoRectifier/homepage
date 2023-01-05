@@ -15,7 +15,6 @@ body {
 
 .ShortActions {
   padding-left: 4px;
-  padding-left: 4px;
+  padding-right: 4px;
   display: flex;
-  align-self: center;
 }

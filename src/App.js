@@ -31,10 +31,10 @@ function App() {
       <Helmet>
         <meta charSet={"utf-8"}/>
         <title>NekøRect</title>
-        <link rel={"icon"} type={"image/png"} href={"https://blog.nekorect.eu.org/images/logo_round.png"}></link>
       </Helmet>
     
       <Container maxWidth={"lg"}>
+        {/* "lg" is 25px padding*/}
         <Box className={"App"}>
         
           <Card className={"Main"}>
@@ -58,7 +58,6 @@ function App() {
               <Typography>
                 A {Get_Curr_Age()} yo. Undergraduate who is passionate about coding and open sourcing.
               </Typography>
-          
             </CardContent>
           
             <div className={"ShortActions"}>
