@@ -27,51 +27,51 @@ const darkTheme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-    
+  
       <Helmet>
         <meta charSet={"utf-8"}/>
         <title>NekøRect</title>
       </Helmet>
-    
+  
       <Container maxWidth={"lg"}>
         {/* "lg" is 25px padding*/}
         <Box className={"App"}>
-        
-          <Card className={"Main"}>
+      
+          <Card sx={{maxHeight: '90vh'}}>
             <CardMedia
               sx={{height: 250}}
               image="../static/images/info_bg.png"
             />
-          
+        
             <CardContent>
-              <div className={"NameDisplay"}>
-                <Typography variant={"h3"}>
-                  NekoRectifier
-                </Typography>
-                <Typography color="text.secondary">
-                  a.k.a. NekoRect
-                </Typography>
-              </div>
-            
+          
+              <Typography variant={"h3"}>
+                NekoRectifier
+              </Typography>
+              <Typography color="text.secondary">
+                a.k.a. NekoRect
+              </Typography>
+          
+          
               {/*  add a split line*/}
               <hr></hr>
               <Typography>
                 A {Get_Curr_Age()} yo. Undergraduate who is passionate about coding and open sourcing.
               </Typography>
             </CardContent>
-          
+        
             <div className={"ShortActions"}>
               <Button href={"https://blog.nekorect.eu.org/"}>Blog</Button>
               <Button href={"https://tool.nekorect.eu.org/"}>Toolbox</Button>
             </div>
-          
-            <CardActions sx={{justifyContent: 'flex-end'}}>
+        
+            <CardActions sx={{justifyContent: 'flex-end', flexWrap: 'wrap'}}>
               <IconButton color={"inherit"} href={"https://nekorect.eu.org/about"}><InfoIcon/></IconButton>
               <IconButton color={'inherit'} href={"https://github.com/NekoRectifier"}><GitHubIcon/></IconButton>
               <IconButton color={'inherit'} href={"https://t.me/NekoRectifier"}><TelegramIcon/></IconButton>
               <IconButton color={"inherit"} href={"https://twitter.com/NekoKjswg5Q"}><Twitter/></IconButton>
             </CardActions>
-
+      
           </Card>
         </Box>
       </Container>

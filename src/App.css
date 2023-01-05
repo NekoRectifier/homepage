@@ -9,12 +9,9 @@ body {
   background-color: #121314;
 }
 
-.Main {
-  max-height: 90vh;
-}
-
 .ShortActions {
   padding-left: 4px;
   padding-right: 4px;
   display: flex;
+  flex-wrap: wrap;
 }
