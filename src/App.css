@@ -1,16 +1,16 @@
 .App {
-  background-color: #121314;
   min-height: 100vh;
-  /*This make sure that the height of App is full */
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+body {
+  background-color: #121314;
+}
+
 .Main {
   max-height: 90vh;
-  width: 50vw;
 }
 
 .ShortActions {
@@ -18,5 +18,4 @@
   padding-left: 4px;
   display: flex;
   align-self: center;
-
 }
