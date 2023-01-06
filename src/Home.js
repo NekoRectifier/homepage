@@ -1,4 +1,4 @@
-import './App.css';
+import './Home.css';
 import {
   Box,
   Button,
@@ -24,36 +24,32 @@ const darkTheme = createTheme({
   },
 })
 
-function App() {
+function Home() {
   return (
     <ThemeProvider theme={darkTheme}>
-  
+      
       <Helmet>
-        <meta charSet={"utf-8"}/>
         <title>NekøRect</title>
       </Helmet>
-  
+      
       <Container maxWidth={"lg"}>
         {/* "lg" is 25px padding*/}
         <Box className={"App"}>
       
           <Card sx={{maxHeight: '90vh'}}>
             <CardMedia
-              sx={{height: 250}}
+              sx={{height: 300}}
               image="../static/images/info_bg.png"
             />
         
             <CardContent>
-          
               <Typography variant={"h3"}>
                 NekoRectifier
               </Typography>
               <Typography color="text.secondary">
                 a.k.a. NekoRect
               </Typography>
-          
-          
-              {/*  add a split line*/}
+  
               <hr></hr>
               <Typography>
                 A {Get_Curr_Age()} yo. Undergraduate who is passionate about coding and open sourcing.
@@ -66,7 +62,7 @@ function App() {
             </div>
         
             <CardActions sx={{justifyContent: 'flex-end', flexWrap: 'wrap'}}>
-              <IconButton color={"inherit"} href={"https://nekorect.eu.org/about"}><InfoIcon/></IconButton>
+              <IconButton color={"inherit"} href={"/about"}><InfoIcon/></IconButton>
               <IconButton color={'inherit'} href={"https://github.com/NekoRectifier"}><GitHubIcon/></IconButton>
               <IconButton color={'inherit'} href={"https://t.me/NekoRectifier"}><TelegramIcon/></IconButton>
               <IconButton color={"inherit"} href={"https://twitter.com/NekoKjswg5Q"}><Twitter/></IconButton>
@@ -85,4 +81,4 @@ function Get_Curr_Age() {
   return (date.getFullYear() - 2002);
 }
 
-export default App;
+export default Home;

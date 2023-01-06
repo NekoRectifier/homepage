@@ -1,8 +1,9 @@
-import React from 'react';
 import './index.css';
-import App from './App';
+import Router from "./router";
 import {createRoot} from "react-dom/client";
 
-const container = document.getElementById('root')
-const root = createRoot(container)
-root.render(<App/>)
+const root = createRoot(document.getElementById('root'))
+
+root.render(
+  <Router/>
+)
