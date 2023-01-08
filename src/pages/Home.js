@@ -1,49 +1,30 @@
 import './Home.css';
-import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Container,
-  createTheme,
-  IconButton,
-  ThemeProvider,
-  Typography
-} from "@mui/material";
+import {Box, Button, Card, CardActions, CardContent, CardMedia, Container, IconButton, Typography} from "@mui/material";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TelegramIcon from "@mui/icons-material/Telegram";
 import {Twitter} from "@mui/icons-material";
 import InfoIcon from '@mui/icons-material/Info';
 import {Helmet} from "react-helmet";
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-})
-
 function Home() {
   return (
-    <ThemeProvider theme={darkTheme}>
-      
+    <Container maxWidth={"lg"}>
+      {/* "lg" is 25px padding*/}
+    
       <Helmet>
         <title>NekøRect</title>
       </Helmet>
+    
+      <Box className={"App"}>
       
-      <Container maxWidth={"lg"}>
-        {/* "lg" is 25px padding*/}
-        <Box className={"App"}>
-      
-          <Card sx={{maxHeight: '90vh'}}>
-            <CardMedia
-              sx={{height: 300}}
-              image="../static/images/info_bg.png"
-            />
+        <Card sx={{maxHeight: '90vh'}}>
+          <CardMedia
+            sx={{height: 300}}
+            image="../static/images/info_bg.png"
+          />
         
-            <CardContent>
-              <Typography variant={"h3"}>
+          <CardContent>
+            <Typography variant={"h3"}>
                 NekoRectifier
               </Typography>
               <Typography color="text.secondary">
@@ -72,7 +53,6 @@ function Home() {
         </Box>
       </Container>
 
-    </ThemeProvider>
   );
 }
 

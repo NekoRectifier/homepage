@@ -1,14 +1,7 @@
-import {Box, Card, CardContent, Container, createTheme, ThemeProvider, Typography} from "@mui/material";
-
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-})
+import {Box, Card, CardContent, Container, Typography} from "@mui/material";
 
 function About() {
   return (
-    <ThemeProvider theme={darkTheme}>
       <Container maxWidth={"lg"}>
         <Box className={"App"}>
           <Card sx={{maxHeight: '90vh'}}>
@@ -52,7 +45,6 @@ function About() {
           </Card>
         </Box>
       </Container>
-    </ThemeProvider>
   )
 }
 
