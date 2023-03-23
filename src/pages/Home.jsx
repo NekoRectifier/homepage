@@ -20,7 +20,7 @@ function Home() {
         <Card sx={{maxHeight: '90vh'}}>
           <CardMedia
             sx={{height: 300}}
-            image="../static/images/info_bg.png"
+            image="../static/images/info_bg.webp"
           />
         
           <CardContent>
